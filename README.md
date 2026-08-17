@@ -1,6 +1,6 @@
 # HydroTFT: A Cross-Basin Attention Model for Multi-Horizon Rainfall–Runoff Prediction
 
-This repository contains the code used to produce every result in the manuscript
+This repository contains the code for the manuscript
 *HydroTFT: A Cross-Basin Attention Model for Multi-Horizon Rainfall–Runoff Prediction*
 : the HydroTFT model, the four baselines
 (EA-LSTM, LSTM, PatchTST, iTransformer), and the training / evaluation pipeline for the
@@ -8,8 +8,7 @@ This repository contains the code used to produce every result in the manuscript
 
 The code is a modification of the CAMELS benchmark code base of Kratzert et al. (2019),
 <https://github.com/kratzert/ealstm_regional_modeling> (Apache-2.0). Only the files we
-added or changed are distributed here; the unchanged upstream files (the EA-LSTM and
-LSTM model definitions, metrics, etc.) are obtained from the upstream repository as
+added or changed are distributed here; the unchanged upstream files are obtained from the upstream repository as
 described in *Setup*. Data (CAMELS) and trained weights are not included because of their
 size; the data are public and instructions for obtaining them are below.
 
