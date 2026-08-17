@@ -387,17 +387,6 @@ class Model(nn.Module):
 
         print(f"-> Using model type: {self.model_type}, out_size: {self.out_size}")
         if model_type == 'tft':
-            if pred_days == 0:
-                # VanillaTFT: simpler architecture better suited for nowcasting
-                self.model = VanillaTFT(
-                    input_size_dyn=input_size_dyn,
-                    input_size_stat=input_size_stat,
-                    hidden_size=hidden_size,
-                    dropout=dropout,
-                    concat_static=concat_static,
-                    no_static=no_static,
-                    initial_forget_bias=initial_forget_bias)
-            else:
                 # Full TFT (v3f): VSN, GateAddNorm, static enrichment for forecasting
                 self.model = TFT(
                     input_size_dyn=input_size_dyn,
